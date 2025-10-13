@@ -1,0 +1,205 @@
+
+.meetVideoContainer {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(135deg, #030e31, #030e31);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+  color: white;
+}
+
+.meetUserVideo {
+position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 250px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  z-index: 10;
+}
+
+.buttonContainers {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 16px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 12px 24px;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  z-index: 10000;
+}
+
+.buttonContainers svg {
+  font-size: 34px;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.buttonContainers svg:hover {
+  transform: scale(1.15);
+  color: #00cfcf; 
+}
+
+.conferenceView {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  width: 100vw;
+  height: 100vh;
+  padding: 10px;
+  background: linear-gradient(135deg, #1e3a8a, #1e40af); /* navy gradient */
+  box-sizing: border-box;
+}
+
+.conferenceView > div {
+  position: relative;
+  background: black;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.conferenceView video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.conferenceView h2 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.9rem;
+  padding: 4px 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  border-radius: 6px;
+  margin: 0;
+}
+
+.lobbyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  width: 100vw;
+  background-color: #1c1f26; /* dark slate gray */
+  padding-top: 5vh;
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+/* Top bar (title + input + button) */
+.lobbyTop {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3vh;
+}
+
+.lobbyTop h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Override MUI input */
+.lobbyInput {
+  background: #2a2e37;
+  border-radius: 8px;
+  min-width: 220px;
+}
+
+.lobbyInput input {
+  color: white !important;
+}
+
+.lobbyInput label {
+  color: #9ca3af !important; /* muted gray */
+}
+
+.lobbyInput fieldset {
+  border-color: #3a3f4b !important;
+}
+
+/* Override MUI button */
+.lobbyButton {
+  background-color: #1f72f9 !important; /* zoom blue */
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 10px 18px !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.lobbyButton:hover {
+  background-color: #1d4fba !important; /* darker blue */
+  transform: scale(1.05);
+}
+
+/* Video preview wrapper */
+.lobbyVideoWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Video preview */
+.lobbyVideo {
+  width: 60vw;
+  max-width: 700px;
+  border-radius: 16px;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.7);
+  border: 1px solid #3a3f4b;
+}
+
+
+.chatRoom{
+    position: absolute;
+    right: 0;
+    background: #d6ddea;
+    height: 97vh;
+    width: 22vw;
+    border-radius: 10px;
+    bottom: 20px;
+    padding-inline: 20px;
+    z-index: 9999;
+
+}
+
+.chatContainer{
+    position: relative;
+    height: 100%;
+}
+
+.chatContainer h1{
+    font-weight: bold;
+    color: #030e31;
+    font-size: larger;
+}
+
+.chatArea{
+    position: absolute;
+    bottom: 0;
+}
+

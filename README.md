@@ -101,7 +101,7 @@ VConnect uses a **room-based signaling system**:
 ### Feel free to fork the repo and submit a pull request.
 
 # Developer
-### Sakshi Kulkarni
+### Sakshi
 
 
 

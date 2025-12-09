@@ -15,8 +15,9 @@ import ChatIcon from "@mui/icons-material/Chat";
 import SendIcon from '@mui/icons-material/Send';
 
 import styles from "../Styles/VideoMeet.module.css";
+import server from "../../environments";
 
-const server_url = "http://localhost:8000";
+const server_url = server;
 
 let connections = {}; // stores peer to peer WebRTC connections by their socket id
 

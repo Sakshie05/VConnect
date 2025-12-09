@@ -15,7 +15,7 @@ import ChatIcon from "@mui/icons-material/Chat";
 import SendIcon from '@mui/icons-material/Send';
 
 import styles from "../Styles/VideoMeet.module.css";
-import server from "../../environments";
+import server from "../environments.js";
 
 const server_url = server;
 
